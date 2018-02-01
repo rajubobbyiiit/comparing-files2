@@ -1,108 +1,35 @@
-mysql> select * from report_custom_fields order by report_id;
-+-----+---------+-----------+------------------------+------------+
-| id  | version | report_id | field_name             | field_type |
-+-----+---------+-----------+------------------------+------------+
-|  69 |       0 |        16 | HARDWARE_COLUMNS       | combobox   |
-|  70 |       0 |        16 | HARDWARE_QUERY         | combobox   |
-|  53 |       0 |       102 | contentScope           | radio      |
-| 133 |       0 |       113 | SUCCESSSTATUS          | checkbox   |
-| 138 |       0 |       113 | FAILEDSTATUS           | checkbox   |
-| 143 |       0 |       113 | ALL                    | checkbox   |
-| 253 |       0 |       122 | CONSOLPARTNER          | combobox   |
-|  27 |       0 |       122 | CAR_PROTOCAL           | text       |
-| 258 |       0 |       122 | CONSOLCLIENT           | combobox   |
-|  29 |       0 |       122 | CAR_SEARCH_TEXT        | text       |
-| 263 |       0 |       122 | CONSOLUSER             | combobox   |
-|  30 |       0 |       122 | CAR_USERS              | text       |
-| 268 |       0 |       143 | MONITORCONTENT         | radio      |
-| 248 |       0 |       143 | MONITORSREPORT         | combobox   |
-|   1 |       0 |       146 | REPORTTYPE             | checkbox   |
-|   2 |       0 |       146 | INTERFACENAME          | text       |
-|   3 |       0 |       146 | USAGE                  | combobox   |
-|   8 |       0 |       146 | PARAMETER              | combobox   |
-|  13 |       0 |       146 | STATISTIC              | combobox   |
-|  14 |       0 |       146 | SHOWWANLINK            | checkbox   |
-|  18 |       0 |       146 | OPERATOR               | combobox   |
-|  23 |       0 |       146 | VALUE                  | text       |
-|  25 |       0 |       146 | Content                | radio      |
-|  26 |       0 |       146 | Metric                 | text       |
-|  80 |       0 |       148 | RESOURCESUMMARY        | text       |
-|  79 |       0 |       148 | PROBLEMDEVICESUMMARY   | text       |
-| 228 |       0 |       148 | DETAILFIELDS           | combobox   |
-| 223 |       0 |       148 | SDREPORTCONTENT        | checkbox   |
-|  49 |       0 |       148 | STATISTICS             | checkbox   |
-|  48 |       0 |       148 | AUDITRECORDINGS        |            |
-|  43 |       0 |       148 | ALERTS                 |            |
-|  38 |       0 |       148 | TICKETS                |            |
-|  33 |       0 |       148 | ENDPOINDSECURITY       |            |
-|  28 |       0 |       148 | DEVICEPERFORMANCE      |            |
-|  78 |       0 |       152 | is_manage_views_filter | radio      |
-|  63 |       0 |       163 | CERALERTS              | checkbox   |
-|  61 |       0 |       163 | NETWORK                | checkbox   |
-|  59 |       0 |       163 | VIRTUAL                | checkbox   |
-|  57 |       0 |       163 | INVENTORY              | checkbox   |
-|  60 |       0 |       163 | DESKTOPCONFIGHEALTH    | checkbox   |
-|  58 |       0 |       163 | SERVERS                | checkbox   |
-|  62 |       0 |       163 | STORAGE                | checkbox   |
-| 113 |       0 |       164 | DISK                   | combobox   |
-| 118 |       0 |       164 | LUN                    | combobox   |
-|  65 |       0 |       164 | FILTERS                | combobox   |
-|  67 |       0 |       164 | STORAGEDISKGROUP       | text       |
-| 108 |       0 |       164 | PROTOCOL               | combobox   |
-| 103 |       0 |       164 | AGGREGATE              | combobox   |
-|  66 |       0 |       164 | STORAGEVOLUME          | text       |
-|  64 |       0 |       164 | STORAGEFILTER          | combobox   |
-|  68 |       0 |       164 | STORAGEDISKS           | text       |
-|  98 |       0 |       164 | THINPOOL               | combobox   |
-| 123 |       0 |       164 | VOLUME                 | combobox   |
-|  93 |       0 |       164 | SYSTEM                 | combobox   |
-| 324 |       0 |       171 | PREDEFINEDRULE         | text       |
-| 278 |       0 |       171 | TICKETTYPE             | combobox   |
-|  71 |       0 |       171 | CUSTOMBUILDER          | text       |
-| 273 |       0 |       171 | TICKETDURATION         | combobox   |
-| 243 |       0 |       171 | TICKETCUSTOMCOLUMNS    | combobox   |
-| 349 |       0 |       171 | INCLUDESLA             | checkbox   |
-|  72 |       0 |       172 | LOGPARTNER             | text       |
-|  76 |       0 |       172 | LOGINTYPE              | text       |
-|  77 |       0 |       172 | LOGOUTTYPE             | text       |
-|  75 |       0 |       172 | LOGSTATUS              | text       |
-|  73 |       0 |       172 | LOGCLIENT              | text       |
-|  74 |       0 |       172 | LOGUSER                | text       |
-| 334 |       0 |       179 | PATCHFIELDS            | checkbox   |
-| 148 |       0 |       179 | CONSOLPATCHRAD         | checkbox   |
-| 153 |       0 |       179 | CONSOLPATCHNAMES       | combobox   |
-| 158 |       0 |       180 | MONITORNAME            | combobox   |
-| 288 |       0 |       180 | SHOWMETRIC             | checkbox   |
-| 283 |       0 |       180 | TEMPLATEID             | combobox   |
-| 364 |       0 |       180 | REPORTON               | combobox   |
-| 369 |       0 |       180 | SYNTHETICTYPE          | combobox   |
-| 198 |       0 |       181 | PARTNERSLIST           | combobox   |
-| 208 |       0 |       181 | USERSLIST              | combobox   |
-| 213 |       0 |       181 | OPERATION              | combobox   |
-| 218 |       0 |       181 | OBJECTTYPE             | combobox   |
-| 203 |       0 |       181 | CLIENTSLIST            | combobox   |
-| 193 |       0 |       182 | USERS                  | combobox   |
-| 188 |       0 |       182 | CLIENTS                | combobox   |
-| 183 |       0 |       182 | PARTNERS               | combobox   |
-| 168 |       0 |       185 | SELECTSTATUS           | checkbox   |
-| 163 |       0 |       185 | MAINTENANCEWINDOWTYPE  | checkbox   |
-| 238 |       0 |       187 | PROJECTSTATUS          | combobox   |
-| 233 |       0 |       187 | PROJECTS               | combobox   |
-| 178 |       0 |       190 | CONSOLAVNAMES          | combobox   |
-| 173 |       0 |       190 | CONSOLAVRAD            | checkbox   |
-| 313 |       0 |       191 | CLIENTSIDS             | combobox   |
-| 318 |       0 |       191 | CUSTOMATTRIBUTES       | combobox   |
-| 323 |       0 |       191 | NATIVECOLUMNS          | combobox   |
-| 308 |       0 |       191 | PARTNERSIDS            | combobox   |
-| 329 |       0 |       193 | AVAILABILITYBY         | text       |
-| 359 |       0 |       193 | CURRENTAVAILABILITY    | checkbox   |
-| 344 |       0 |       197 | PAYLOAD                | checkbox   |
-| 339 |       0 |       198 | CLOUDOPTION            | combobox   |
-| 354 |       0 |       200 | SCHRECURTYPE           | combobox   |
-| 374 |       0 |       203 | REPORTON               | combobox   |
-| 379 |       0 |       203 | METRICNAME             | combobox   |
-| 384 |       0 |       203 | RESFILTER              | combobox   |
-| 389 |       0 |       203 | RESFILTERVALUE         | combobox   |
-+-----+---------+-----------+------------------------+------------+
-101 rows in set (0.00 sec)
-
+mysql> select * from custom_report_fields;
++-----+---------+------------------+--------------------+-----------------+------------+----------------+---------------------+-------------+---------+--------+---------+-----------------+
+| id  | version | name             | display_name       | operator_type   | input_type | attribute_type | listing_column      | ticket_type | listing | app_id | source  | scope           |
++-----+---------+------------------+--------------------+-----------------+------------+----------------+---------------------+-------------+---------+--------+---------+-----------------+
+|   3 |       0 | classCode        | Request Type       | BooleanOperator | SELECT     | STRING         | classCode           | NULL        |       0 |      1 | PORTAL  | EVERYONE        |
+|   8 |       0 | subject          | Subject            | StringOperator  | INPUT      | STRING         | subject             | NULL        |       1 |      1 | PORTAL  | EVERYONE        |
+|  13 |       0 | msp.id           | Partner            | BooleanOperator | SELECT     | STRING         | msp.name            | NULL        |       1 |      1 | PORTAL  | SERVICEPROVIDER |
+|  18 |       0 | priority.id      | Priority           | BooleanOperator | SELECT     | STRING         | priority.name       | NULL        |       1 |      1 | PORTAL  | EVERYONE        |
+|  23 |       0 | status.id        | Status             | BooleanOperator | SELECT     | STRING         | status.name         | NULL        |       1 |      1 | PORTAL  | EVERYONE        |
+|  28 |       0 | createdDate      | Created Date       | DateOperator    | DATE       | DATE           | createdDate         | NULL        |       1 |      1 | PORTAL  | EVERYONE        |
+|  33 |       0 | updatedDate      | Updated Date       | DateOperator    | DATE       | DATE           | updatedDate         | NULL        |       1 |      1 | PORTAL  | EVERYONE        |
+|  38 |       0 | responseTime     | Response Time      | NumericOperator | TIME       | LONG           | responseTime        | NULL        |       0 |      1 | PORTAL  | EVERYONE        |
+|  43 |       0 | resolutionTime   | Resolution Time    | NumericOperator | TIME       | LONG           | resolutionTime      | NULL        |       0 |      1 | PORTAL  | EVERYONE        |
+|  48 |       0 | plannedStart     | Planned start      | DateOperator    | DATE       | DATE           | plannedStart        | Change      |       0 |      1 | PORTAL  | EVERYONE        |
+|  53 |       0 | plannedEnd       | Planned end        | DateOperator    | DATE       | DATE           | plannedEnd          | Change      |       0 |      1 | PORTAL  | EVERYONE        |
+|  58 |       0 | workStart        | Work start         | DateOperator    | DATE       | DATE           | workStart           | Change      |       0 |      1 | PORTAL  | EVERYONE        |
+|  63 |       0 | workEnd          | Work end           | DateOperator    | DATE       | DATE           | workEnd             | Change      |       0 |      1 | PORTAL  | EVERYONE        |
+|  68 |       0 | startDate        | Start date         | DateOperator    | DATE       | DATE           | startDate           | Task        |       0 |      1 | PORTAL  | EVERYONE        |
+|  73 |       0 | endDate          | End date           | DateOperator    | DATE       | DATE           | endDate             | Task        |       0 |      1 | PORTAL  | EVERYONE        |
+|  78 |       0 | timeSpent        | Time spent         | NumericOperator | TIME       | LONG           | timeSpent           | NULL        |       0 |      1 | VISTARA | EVERYONE        |
+|  83 |       0 | client.id        | Client             | BooleanOperator | SELECT     | STRING         | client.name         | NULL        |       1 |      1 | PORTAL  | MSP             |
+|  88 |       0 | cc               | CC                 | StringOperator  | INPUT      | STRING         | cc                  | NULL        |       1 |      1 | PORTAL  | EVERYONE        |
+|  93 |       0 | impact           | Description        | StringOperator  | INPUT      | STRING         | description         | NULL        |       1 |      1 | PORTAL  | EVERYONE        |
+|  98 |       0 | assignedTo.id    | Assign To          | BooleanOperator | SELECT     | STRING         | assignedTo.fullName | NULL        |       1 |      1 | PORTAL  | EVERYONE        |
+| 103 |       0 | resolvedDate     | Resolved Date      | DateOperator    | DATE       | DATE           | resolvedDate        | NULL        |       1 |      1 | PORTAL  | EVERYONE        |
+| 108 |       0 | closedDate       | Closed Date        | DateOperator    | DATE       | DATE           | closedDate          | NULL        |       1 |      1 | PORTAL  | EVERYONE        |
+| 113 |       0 | reopens          | Reopens            | NumericOperator | LONG       | LONG           | reopens             | NULL        |       0 |      1 | PORTAL  | EVERYONE        |
+| 118 |       0 | oldStatus        | Old Status         | BooleanOperator | SELECT     | STRING         | oldStatus           | NULL        |       1 |      1 | PORTAL  | EVERYONE        |
+| 123 |       0 | assigneeGroupIds | Assignee Group     | BooleanOperator | SELECT     | STRING         | assigneeGroupIds    | NULL        |       1 |      1 | PORTAL  | EVERYONE        |
+| 128 |       0 | source           | Source             | BooleanOperator | SELECT     | STRING         | source              | NULL        |       1 |      1 | PORTAL  | EVERYONE        |
+| 133 |       0 | sourcePolicyType | Source Policy Type | BooleanOperator | SELECT     | STRING         | sourcePolicyType    | NULL        |       1 |      1 | PORTAL  | EVERYONE        |
+| 138 |       0 | firstContactFix  | First Contact Fix  | BooleanOperator | CHECKBOX   | STRING         | firstContactFix     | NULL        |       1 |      1 | PORTAL  | EVERYONE        |
+| 139 |       0 | reopenCount      | Reopen Count       | NumericOperator | LONG       | LONG           | reopenCount         | NULL        |       1 |      1 | PORTAL  | EVERYONE        |
++-----+---------+------------------+--------------------+-----------------+------------+----------------+---------------------+-------------+---------+--------+---------+-----------------+
+29 rows in set (0.00 sec)
