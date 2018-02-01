@@ -1,0 +1,72 @@
+id	database_column	display_name	version
+3	dd.device_name	Device Name	0
+8	dd.os	Operating_System	0
+13	dd.serialnumber	Serial_Number	0
+18	dd.agent_installed	Is_Agent_Installed?	0
+23	dd.model	Model	0
+28	dd.sysvendor	Make	0
+33	dd.state	Device State	0
+38	dd.description	Description	0
+43	dd.hardware_revision	Hardware Version	0
+48	dd.timezone	Timezone	0
+53	dd.created_date	First Created Date	0
+58	dd.modified_date	Modified_Date	0
+63	dd.modified_date	Scan Date	0
+68	dd.created_source	Created_Source	0
+73	dd.snmp_supported	Is_SNMP_Supported?	0
+78	dd.wmi_supported	Is_WMI_Supported?	0
+83	dd.physicalmemory_GB	Physical_Memory	0
+88	dd.firmware_revision	Firmware Version	0
+93	dd.ipAddress	IP_Address	0
+98	ndd.dhcpenabled	DHCP_Enabled	0
+103	pd.processor	Processor	0
+108	pd.processorname	Processor_Name	0
+113	lddd.drvname	Disk Name	0
+123	lddd.drvcaption	Disk Caption	0
+133	lddd.drvtotalspace_GB	Drive Total Space(GB)	0
+138	dt.devicetype	Device_Type	0
+143	dgm.name	Device_Group(s)	0
+148	sku.sku	Device_SKU	0
+153	dl.name	Site_Name	0
+158	app.applicationname	Application Name	0
+163	app.applicationversion	Application Version	0
+168	org.name	Client Name	0
+173	drac.access_info_ipv4	DRAC IP	0
+174	dwd.purchase_date	Purchase_Date	0
+175	dwd.warranty_expiration	Warranty_Expiry_Date	0
+176	dwd.warranty_lapse	Warranty Lapse Within(Days)	0
+177	sp.name	Service	0
+178	dd.last_scan_time	Last_Scanned_Time	0
+183	lc.product_key	Product_Key	0
+198	dd.last_discovered_time	Last Discovered Time	0
+208	avd.agent_version	Agent Version	0
+213	dd.agent_type	Profile Type	0
+223	dd.id	Device ID	0
+253	ndd.ifname	Interface Name	0
+258	ndd.macaddress	Interface IPaddress	0
+263	ndd.ipaddress	Interface MAC Address	0
+268	ndd.speed	Interface Speed	0
+298	dd.currentloggedonuser	Logged In User	0
+303	dd.device_alias_name	Alias Name	0
+308	dd.mac_address	MAC Address	0
+313	dd.domain	Domain	0
+318	dd.domainrole	Domain Role	0
+323	lddd.drvfreespace_GB	Drive Free Space(GB)	0
+328	con.name	Consoles	0
+333	dd.last_monitored_time	Last_Monitored_time	0
+338	dd.last_updated_time	Last_Updated_time	0
+343	cmgp.name	Profile Name	0
+348	dd.class_code	Resource Type	0
+353	dd.unique_id	Unique ID	0
+358	ndd.ifdesc	Interface Description	0
+363	ndd.ifalias	Interface Alias Name	0
+368	dd.mo_id	Instance ID	0
+369	ndd.admin_status	Admin Status	0
+374	dgm.name	Device_Group	0
+379	dt.path	Device Path	0
+384	proxyName	Proxy Name	0
+389	ndd.oper_status	Operational Status	0
+394	agentType	Agent Type	0
+399	dd.osversion	OS_Version	0
+404	isCloudInstance	Is Cloud Instance?	0
+409	cloud_integration_name	Cloud Integration Name	0
