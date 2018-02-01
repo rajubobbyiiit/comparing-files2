@@ -1,0 +1,107 @@
+mysql> select * from report_custom_fields;
++-----+---------+-----------+------------------------+------------+
+| id  | version | report_id | field_name             | field_type |
++-----+---------+-----------+------------------------+------------+
+|   1 |       0 |       146 | REPORTTYPE             | checkbox   |
+|   2 |       0 |       146 | INTERFACENAME          | text       |
+|   3 |       0 |       146 | USAGE                  | combobox   |
+|   8 |       0 |       146 | PARAMETER              | combobox   |
+|  13 |       0 |       146 | STATISTIC              | combobox   |
+|  14 |       0 |       146 | SHOWWANLINK            | checkbox   |
+|  18 |       0 |       146 | OPERATOR               | combobox   |
+|  23 |       0 |       146 | VALUE                  | text       |
+|  25 |       0 |       146 | Content                | radio      |
+|  26 |       0 |       146 | Metric                 | text       |
+|  27 |       0 |       122 | CAR_PROTOCAL           | text       |
+|  28 |       0 |       148 | DEVICEPERFORMANCE      |            |
+|  29 |       0 |       122 | CAR_SEARCH_TEXT        | text       |
+|  30 |       0 |       122 | CAR_USERS              | text       |
+|  33 |       0 |       148 | ENDPOINDSECURITY       |            |
+|  38 |       0 |       148 | TICKETS                |            |
+|  43 |       0 |       148 | ALERTS                 |            |
+|  48 |       0 |       148 | AUDITRECORDINGS        |            |
+|  49 |       0 |       148 | STATISTICS             | checkbox   |
+|  53 |       0 |       102 | contentScope           | radio      |
+|  57 |       0 |       163 | INVENTORY              | checkbox   |
+|  58 |       0 |       163 | SERVERS                | checkbox   |
+|  59 |       0 |       163 | VIRTUAL                | checkbox   |
+|  60 |       0 |       163 | DESKTOPCONFIGHEALTH    | checkbox   |
+|  61 |       0 |       163 | NETWORK                | checkbox   |
+|  62 |       0 |       163 | STORAGE                | checkbox   |
+|  63 |       0 |       163 | CERALERTS              | checkbox   |
+|  64 |       0 |       164 | STORAGEFILTER          | combobox   |
+|  65 |       0 |       164 | FILTERS                | combobox   |
+|  66 |       0 |       164 | STORAGEVOLUME          | text       |
+|  67 |       0 |       164 | STORAGEDISKGROUP       | text       |
+|  68 |       0 |       164 | STORAGEDISKS           | text       |
+|  69 |       0 |        16 | HARDWARE_COLUMNS       | combobox   |
+|  70 |       0 |        16 | HARDWARE_QUERY         | combobox   |
+|  71 |       0 |       171 | CUSTOMBUILDER          | text       |
+|  72 |       0 |       172 | LOGPARTNER             | text       |
+|  73 |       0 |       172 | LOGCLIENT              | text       |
+|  74 |       0 |       172 | LOGUSER                | text       |
+|  75 |       0 |       172 | LOGSTATUS              | text       |
+|  76 |       0 |       172 | LOGINTYPE              | text       |
+|  77 |       0 |       172 | LOGOUTTYPE             | text       |
+|  78 |       0 |       152 | is_manage_views_filter | radio      |
+|  79 |       0 |       148 | PROBLEMDEVICESUMMARY   | text       |
+|  80 |       0 |       148 | RESOURCESUMMARY        | text       |
+|  93 |       0 |       164 | SYSTEM                 | combobox   |
+|  98 |       0 |       164 | THINPOOL               | combobox   |
+| 103 |       0 |       164 | AGGREGATE              | combobox   |
+| 108 |       0 |       164 | PROTOCOL               | combobox   |
+| 113 |       0 |       164 | DISK                   | combobox   |
+| 118 |       0 |       164 | LUN                    | combobox   |
+| 123 |       0 |       164 | VOLUME                 | combobox   |
+| 133 |       0 |       113 | SUCCESSSTATUS          | checkbox   |
+| 138 |       0 |       113 | FAILEDSTATUS           | checkbox   |
+| 143 |       0 |       113 | ALL                    | checkbox   |
+| 148 |       0 |       179 | CONSOLPATCHRAD         | checkbox   |
+| 153 |       0 |       179 | CONSOLPATCHNAMES       | combobox   |
+| 158 |       0 |       180 | MONITORNAME            | combobox   |
+| 163 |       0 |       185 | MAINTENANCEWINDOWTYPE  | checkbox   |
+| 168 |       0 |       185 | SELECTSTATUS           | checkbox   |
+| 173 |       0 |       190 | CONSOLAVRAD            | checkbox   |
+| 178 |       0 |       190 | CONSOLAVNAMES          | combobox   |
+| 183 |       0 |       182 | PARTNERS               | combobox   |
+| 188 |       0 |       182 | CLIENTS                | combobox   |
+| 193 |       0 |       182 | USERS                  | combobox   |
+| 198 |       0 |       181 | PARTNERSLIST           | combobox   |
+| 203 |       0 |       181 | CLIENTSLIST            | combobox   |
+| 208 |       0 |       181 | USERSLIST              | combobox   |
+| 213 |       0 |       181 | OPERATION              | combobox   |
+| 218 |       0 |       181 | OBJECTTYPE             | combobox   |
+| 223 |       0 |       148 | SDREPORTCONTENT        | checkbox   |
+| 228 |       0 |       148 | DETAILFIELDS           | combobox   |
+| 233 |       0 |       187 | PROJECTS               | combobox   |
+| 238 |       0 |       187 | PROJECTSTATUS          | combobox   |
+| 243 |       0 |       171 | TICKETCUSTOMCOLUMNS    | combobox   |
+| 248 |       0 |       143 | MONITORSREPORT         | combobox   |
+| 253 |       0 |       122 | CONSOLPARTNER          | combobox   |
+| 258 |       0 |       122 | CONSOLCLIENT           | combobox   |
+| 263 |       0 |       122 | CONSOLUSER             | combobox   |
+| 268 |       0 |       143 | MONITORCONTENT         | radio      |
+| 273 |       0 |       171 | TICKETDURATION         | combobox   |
+| 278 |       0 |       171 | TICKETTYPE             | combobox   |
+| 283 |       0 |       180 | TEMPLATEID             | combobox   |
+| 288 |       0 |       180 | SHOWMETRIC             | checkbox   |
+| 308 |       0 |       191 | PARTNERSIDS            | combobox   |
+| 313 |       0 |       191 | CLIENTSIDS             | combobox   |
+| 318 |       0 |       191 | CUSTOMATTRIBUTES       | combobox   |
+| 323 |       0 |       191 | NATIVECOLUMNS          | combobox   |
+| 324 |       0 |       171 | PREDEFINEDRULE         | text       |
+| 329 |       0 |       193 | AVAILABILITYBY         | text       |
+| 334 |       0 |       179 | PATCHFIELDS            | checkbox   |
+| 339 |       0 |       198 | CLOUDOPTION            | combobox   |
+| 344 |       0 |       197 | PAYLOAD                | checkbox   |
+| 349 |       0 |       171 | INCLUDESLA             | checkbox   |
+| 354 |       0 |       200 | SCHRECURTYPE           | combobox   |
+| 359 |       0 |       193 | CURRENTAVAILABILITY    | checkbox   |
+| 364 |       0 |       180 | REPORTON               | combobox   |
+| 369 |       0 |       180 | SYNTHETICTYPE          | combobox   |
+| 374 |       0 |       203 | REPORTON               | combobox   |
+| 379 |       0 |       203 | METRICNAME             | combobox   |
+| 384 |       0 |       203 | RESFILTER              | combobox   |
+| 389 |       0 |       203 | RESFILTERVALUE         | combobox   |
++-----+---------+-----------+------------------------+------------+
+101 rows in set (0.00 sec)
